@@ -5,40 +5,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ofertas do Dia | alilivreshop</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+
 <style>
 body{
     margin:0;
     font-family:'Montserrat', sans-serif;
     background: linear-gradient(180deg,#E10600,#990000);
-    text-align:center;
     color:white;
+    text-align:center;
 }
+
 .container{
-    padding:30px 20px;
+    padding:20px;
     max-width:500px;
     margin:auto;
 }
+
 .title{
     font-family:'Anton', sans-serif;
-    font-size:32px;
+    font-size:30px;
+    margin-bottom:20px;
 }
-.product{
-    background:black;
-    padding:15px;
-    margin:12px 0;
-    border-radius:10px;
+
+.card{
+    background:white;
+    color:black;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
     text-decoration:none;
-    color:white;
     display:block;
-    font-weight:700;
+    transition:0.3s;
 }
-.product:hover{
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.product-name{
+    font-weight:900;
+    font-size:16px;
+    margin-bottom:8px;
+}
+
+.price{
+    color:#E10600;
+    font-weight:900;
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.buy-button{
+    background:black;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+    font-weight:900;
+}
+
+.buy-button:hover{
     background:#FFD700;
     color:black;
 }
+
 .back{
     display:inline-block;
-    margin-top:20px;
+    margin-top:15px;
     color:#FFD700;
     text-decoration:none;
     font-weight:700;
@@ -52,10 +95,25 @@ body{
 
 <div class="title">🔥 OFERTAS DO DIA</div>
 
-<a href="https://meli.la/1PZBDuG" class="product">🛒 Produto 1 - R$ 99,90</a>   
-<a href="#" class="product">🛒 Produto 1 - R$ 49,90</a>
-<a href="#" class="product">🛒 Produto 2 - R$ 89,90</a>
-<a href="#" class="product">🛒 Produto 3 - R$ 19,90</a>
+<!-- PRODUTO 1 -->
+<a href="LINK_DO_PRODUTO_AQUI" class="card" target="_blank">
+    <img src="URL_DA_IMAGEM_AQUI" alt="Produto">
+    <div class="card-content">
+        <div class="product-name">Nome do Produto Aqui</div>
+        <div class="price">R$ 99,90</div>
+        <div class="buy-button">🛒 COMPRAR AGORA</div>
+    </div>
+</a>
+
+<!-- PRODUTO 2 -->
+<a href="LINK_DO_PRODUTO_AQUI" class="card" target="_blank">
+    <img src="URL_DA_IMAGEM_AQUI" alt="Produto">
+    <div class="card-content">
+        <div class="product-name">Outro Produto Aqui</div>
+        <div class="price">R$ 49,90</div>
+        <div class="buy-button">🛒 COMPRAR AGORA</div>
+    </div>
+</a>
 
 <a href="index.html" class="back">⬅ Voltar</a>
 
